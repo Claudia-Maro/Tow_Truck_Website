@@ -141,3 +141,51 @@
         box-shadow: 0 5px 10px rgba(0,0,0,0.1);
     }
 }
+.block_adv{
+    background-image: url(../../images/40.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    padding: 40px 0;
+    margin: 40px 0;
+}
+.block_adv h2{
+    margin-bottom: 30px;
+}
+.block_adv ul li{
+    margin: 2% 0;
+    font-size: 20px;
+}
+.block_adv ul li span{
+    color:red;
+}
+.track-card img{
+    width: 100%;
+}
+.track-card h3{
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom:1px solid red;
+   
+}
+.track-card .description {
+    padding:30px;
+}
+.track-card .description ul{
+    list-style-type: none;
+}
+track-card .description li{
+    font-size:0;
+}
+.track-card .description ul li label{
+   display:inline-block;
+   width: 70%;
+   font-size:16px;
+}
+.track-card .description ul li span{
+   display:inline-block;
+   width: 30%;
+   text-align: right;
+   font-size:16px;
+
+}
