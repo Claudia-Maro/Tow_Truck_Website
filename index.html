@@ -4,9 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Услуги эвакуатора | Профессиональная эвакуация автомобилей</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
  <div class="top-bar">
@@ -24,7 +26,7 @@
         <div class="row align-items-center">
             <div class="col-md-6 col-lg-3">
                 <a href="#" class="main-logo">
-                    <img src="images/2.webp" alt="Логотип Услуги эвакуатора">
+                    <img src="images/100.webp" alt="Логотип Услуги эвакуатора">
                     <div class="logo-text">
                         <span class="logo-top">Услуги</span>
                         <span class="logo-bottom">эвакуатора</span>
@@ -80,30 +82,219 @@
                     </ul>
                 </div>
             </div>
+            <!-- Блок преимуществ с иконками -->
+            <section class="advantages-section">
+    <div class="row">
+        <div class="col-lg-12 text-center mb-5">
+            <h2>Почему выбирают нас</h2>
+            <p class="section-subtitle">Наши преимущества перед конкурентами</p>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="bi bi-clock-history"></i>
+                </div>
+                <h3>Круглосуточно</h3>
+                <p>Работаем 24/7 без выходных и праздников. Приедем в любое время дня и ночи.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="bi bi-lightning-charge"></i>
+                </div>
+                <h3>Быстро</h3>
+                <p>Среднее время прибытия - 30 минут по Москве. Срочный выезд в течение 15 минут.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="bi bi-cash-coin"></i>
+                </div>
+                <h3>Доступно</h3>
+                <p>Честные цены без скрытых платежей. Скидки постоянным клиентам.</p>
+            </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-3">
+            <div class="advantage-card">
+                <div class="advantage-icon">
+                    <i class="bi bi-shield-check"></i>
+                </div>
+                <h3>Надёжно</h3>
+                <p>Официальный договор. Страхование груза. Гарантия сохранности вашего авто.</p>
+            </div>
+        </div>
+    </div>
+            </section>
+
             <div class="col-lg-12">
                 <h3 class="text-center">Манипуляторы</h3>
                 <p class="text-center">Выберите подходящую технику</p>
             </div>
             <div class="col-lg-4">
                 <div class="track-card">
-                    <img src="images/6.webp" alt="">
+                    <img src="images/1111.png" alt="">
                     <div class="description">
-                        <h3>Hounda</h3>
+                        <h3>Hyundai HD78</h3>
                         <ul>
-                            <li><label for="">Машина</label><span>15тон</span></li>
-                            <li><label for="">Дача</label><span>15тон</span></li>
-                            <li><label for="">Поезд</label><span>15тон</span></li>
-                            <li><label for="">Электричка</label><span>15тон</span></li>
-                            <li><label for="">Самолет</label><span>15тон</span></li>
-                            <li><label for="">Ракета</label><span>15тон</span></li>
+                            <li><label>Грузоподъемность</label><span>7 тонн</span></li>
+                            <li><label>Вылет стрелы</label><span>6.5 м</span></li>
+                            <li><label>Длина платформы</label><span>6 м</span></li>
+                            <li><label>Работаем</label><span>24/7</span></li>
+                            <li><label>Цена за км</label><span>50 ₽</span></li>
+                            <li><label>Минимальный заказ</label><span>2000 ₽</span></li>
                         </ul>
+                        <a href="#" class="order-btn animate-pulse">Заказать</a>
                     </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="track-card">
+                    <img src="images/222.png" alt="">
+                    <div class="description">
+                        <h3>ISUZU NQR75</h3>
+                        <ul>
+                            <li><label>Грузоподъемность</label><span>10 тонн</span></li>
+                            <li><label>Вылет стрелы</label><span>7.2 м</span></li>
+                            <li><label>Длина платформы</label><span>7 м</span></li>
+                            <li><label>Работаем</label><span>24/7</span></li>
+                            <li><label>Цена за км</label><span>60 ₽</span></li>
+                            <li><label>Минимальный заказ</label><span>2500 ₽</span></li>
+                        </ul>
+                        <a href="#" class="order-btn animate-pulse">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="track-card">
+                    <img src="images/33333.png" alt="">
+                    <div class="description">
+                        <h3>KAMAZ 65115</h3>
+                        <ul>
+                            <li><label>Грузоподъемность</label><span>15 тонн</span></li>
+                            <li><label>Вылет стрелы</label><span>8 м</span></li>
+                            <li><label>Длина платформы</label><span>8.5 м</span></li>
+                            <li><label>Работаем</label><span>24/7</span></li>
+                            <li><label>Цена за км</label><span>80 ₽</span></li>
+                            <li><label>Минимальный заказ</label><span>3500 ₽</span></li>
+                        </ul>
+                        <a href="#" class="order-btn animate-pulse">Заказать</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="map-section">
+                    <h3 class="text-center">Наши эвакуаторы работают в этих районах Москвы</h3>
+                    <div id="map"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-callback">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Остались вопросы?</h3>
+                    <p>Оставьте номер телефона, и мы перезвоним вам в течение 5 минут</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="callback-form">
+                        <div class="input-group">
+                            <input type="tel" class="form-control" placeholder="+7 (___) ___-__-__" required>
+                            <button class="btn btn-callback" type="submit">Позвонить</button>
+                        </div>
+                        <div class="form-agreement">
+                            <input type="checkbox" id="footer-agree" checked required>
+                            <label for="footer-agree">Согласен с <a href="#">политикой конфиденциальности</a></label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
+        <div class="footer-main">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <a href="#" class="footer-logo">
+                            <img src="images/100.webp" alt="Логотип Услуги эвакуатора">
+                            <div class="logo-text">
+                                <span class="logo-top">Услуги</span>
+                                <span class="logo-bottom">эвакуатора</span>
+                            </div>
+                        </a>
+                        <p class="footer-description">Профессиональные услуги эвакуации автомобилей и спецтехники в Москве и области. Работаем круглосуточно без выходных.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-nav">
+                        <h4>Меню</h4>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Аренда</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-services">
+                        <h4>Услуги</h4>
+                        <ul>
+                            <li><a href="#">Эвакуация легковых авто</a></li>
+                            <li><a href="#">Эвакуация коммерческого транспорта</a></li>
+                            <li><a href="#">Перевозка спецтехники</a></li>
+                            <li><a href="#">Аренда манипулятора</a></li>
+                            <li><a href="#">Круглосуточная эвакуация</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-contacts">
+                        <h4>Контакты</h4>
+                        <ul>
+                            <li><i class="bi bi-telephone"></i> <a href="tel:+79991234567">+7 (***) ***-**-**</a></li>
+                            <li><i class="bi bi-envelope"></i> <a href="mailto:info@evacuator.ru">info@evacuator.ru</a></li>
+                            <li><i class="bi bi-geo-alt"></i> г. Москва, ул. Примерная, 123</li>
+                        </ul>
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-vk"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Услуги эвакуатора. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#">Политика конфиденциальности</a> | 
+                    <a href="#">Пользовательское соглашение</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="assets/js/k.js"></script>
 </body>
 </html>
